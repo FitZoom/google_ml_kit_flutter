@@ -72,7 +72,6 @@ public class PoseDetector implements MethodChannel.MethodCallHandler {
             if (hardware.equals("gpu")) {
                 hardwareMode = PoseDetectorOptions.CPU_GPU;
             }
-            hardwareMode = 3;
 
             String model = (String) options.get("model");
             if (model.equals("base")) {
@@ -88,6 +87,7 @@ public class PoseDetector implements MethodChannel.MethodCallHandler {
                         .build();
                 poseDetector = PoseDetection.getClient(detectorOptions);
             }
+            
             instances.put(id, poseDetector);
         }
 
