@@ -68,7 +68,7 @@ public class PoseDetector implements MethodChannel.MethodCallHandler {
             }
 
             String hardware = (String) options.get("hardware");
-            int hardwareMode = PoseDetectorOptions.CPU_GPU_KEK;
+            int hardwareMode = PoseDetectorOptions.CPU_GPU;
             if (hardware.equals("cpu")) {
                 hardwareMode = PoseDetectorOptions.CPU;
             }
