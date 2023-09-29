@@ -57,7 +57,7 @@ class PoseDetectorOptions {
   PoseDetectorOptions(
       {this.model = PoseDetectionModel.base,
       this.mode = PoseDetectionMode.stream,
-      this.hardware = PoseDetectionHardware.cpu});
+      this.hardware = PoseDetectionHardware.gpu});
 
   /// Returns a json representation of an instance of [PoseDetectorOptions].
   Map<String, dynamic> toJson() => {
